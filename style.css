@@ -1,0 +1,47 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+.preloader{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.preloader div{
+    margin:0 10px ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(196, 196, 196);
+    
+}
+.circle_1, .circle_2, .circle_3, .circle_4{
+    animation-name: motion;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+.circle_2{
+    animation-delay: 3s;
+}
+.circle_3{
+    animation-delay: 5s;
+
+}
+.circle_4{
+    animation-delay: 8s;
+}
+@keyframes motion {
+    from{
+        background-color: rgb(153, 151, 151);
+
+    }
+    to{
+        background-color: rgb(31, 30, 30);
+    }
+}
